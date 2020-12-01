@@ -1,0 +1,1 @@
+"{{c1::题西林壁::tí xī lín bì}}</br>{{c2::苏轼::sū shì}}</br>{{c3::横看成岭侧成峰::hēng kàn chēng lǐng cè chēng fēng}}，{{c4::远近高低各不同。::yuǎn jìn gāo dī ge bù tóng。}}</br>{{c5::不识庐山真面目::bù shí lú shān zhēn miàn mù}}，{{c6::只缘身在此山中。::zhǐ yuán shēn zài cǐ shān zhōng。}}</br>"

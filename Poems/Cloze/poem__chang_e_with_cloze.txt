@@ -1,0 +1,1 @@
+"{{c1::嫦娥::cháng é}}</br>{{c2::李商隐::lǐ shāng yǐn}}</br>{{c3::云母屏风烛影深::yúdun mǔ píng fēng zhú yǐng shēn}}，{{c4::长河渐落晓星沉。::cháng hé jiàn luò xiǎdaoo xīng chén。}}</br>{{c5::嫦娥应悔偷灵药::cháng é yīng huǐ tōu líng yào}}，{{c6::碧海青天夜夜心。::bì hǎi qīng tiān yè yè xīn。 }}</br>"

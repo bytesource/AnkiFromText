@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EV9QgaT3H7CWUVgWWQJ7GZNOTpF6ghCCWvPSZKAxEe3heQMvW5q3dGs6xZRiQDIpkNFBWcM1rFQskoDhsOvLKw==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\Programming\\Fsharp\\AnkiFromText\\AnkiFromText.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\fsharp.core\\5.0.0-beta.20477.1\\fsharp.core.5.0.0-beta.20477.1.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\fsharp.data\\3.3.3\\fsharp.data.3.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}
