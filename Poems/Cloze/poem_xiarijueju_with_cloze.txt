@@ -1,0 +1,1 @@
+"{{c1::夏日绝句::xià rì jué jù}}</br>{{c2::宋朝·李清照::sòng cháo · lǐ qīng zhào}}</br>{{c3::生当作人杰::shēzhing dāng zuò rén jié }}，{{c4:: 死亦为鬼雄。:: sǐ yì wéi guǐ xióng 。}}</br>{{c5::至今思项羽::zhì jīn sī xiàng yǔ }}，{{c6:: 不肯过江东。:: bù kěn guò jiāng dōng 。}}</br>"
