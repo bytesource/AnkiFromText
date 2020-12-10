@@ -29,7 +29,7 @@ let withCloze (text: string []) =
     let del = '，'
     let delString = string del
     let mutable i = 0
-    let wrapper = sprintf "{{c%d::%s::%s}}" 
+    let toClozeFormat = sprintf "{{c%d::%s::%s}}" 
 
     let test = "".Split ','
 
@@ -44,12 +44,12 @@ let withCloze (text: string []) =
                 let pinyinPart = pinyin.Split del
                 let parts =
                     line.Split del 
-                    |> Array.mapi (fun index part -> i <- i + 1; wrapper i part pinyinPart.[index])
+                    |> Array.mapi (fun index part -> i <- i + 1; toClozeFormat i part pinyinPart.[index])
                     |> String.concat delString
                 yield parts
             else
                 i <- i + 1
-                yield wrapper i line pinyin
+                yield toClozeFormat i line pinyin
     |]
 
 
