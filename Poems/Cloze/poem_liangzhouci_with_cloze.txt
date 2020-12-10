@@ -1,0 +1,1 @@
+"{{c1::凉州词::liáng zhōu cí}}</br>{{c2::（唐）王之涣::（táng）wángzhīhuàn}}</br>{{c3::黄河远上白云间 ::huáng hé yuǎn shàng bái yún jiān}}</br>{{c4::一片孤城万仞山 。::yī piàn gūzhuan chéng wàn rèn shān}}</br>{{c5::羌笛何须怨杨柳::qiāng dí hé xū yuàn yáng liǔ}}</br>{{c6::春风不度玉门关 。::chūn fēng bū dù yù mén guān}}</br>"
