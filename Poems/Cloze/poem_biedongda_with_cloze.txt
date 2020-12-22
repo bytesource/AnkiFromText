@@ -1,0 +1,1 @@
+"{{c1::别董大::bié dǒng dà}}</br>{{c2::唐·高适::tang3·gao1 shi4}}</br>{{c3::千里黄云白日曛::qiān lǐ huáng yún bái rì xūn}}，{{c4::北风吹雁雪纷纷。::běi fēng chuī yàn xuě fēn fēn。}}</br>{{c5::莫愁前路无知己::mò chóu qián lù wú zhī jǐ}}，{{c6::天下谁人不识君。::tiān xià shuí rén bù shí jūn。}}</br>"
