@@ -4,7 +4,7 @@ open System.IO
 // https://docs.ankiweb.net/#/editing?id=cloze-deletion
 
 let ext = ".txt"
-let srcFilePoem = "宿新市徐公店"
+let srcFilePoem = "清平乐"
 let srcFilePinyin = srcFilePoem + "_pinyin"
 
 
