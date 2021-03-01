@@ -4,7 +4,7 @@ open System.IO
 // https://docs.ankiweb.net/#/editing?id=cloze-deletion
 
 let ext = ".txt"
-let srcFilePoem = "四时田园杂兴"
+let srcFilePoem = "宿新市徐公店"
 let srcFilePinyin = srcFilePoem + "_pinyin"
 
 
@@ -25,6 +25,8 @@ let lookup =
 
 
 // FIXME: Don't use ", " as delimiter. Try to cut between non-Chinese-chracters using regex.
+// FIXME: "Out of bounds exception" if one file contains a comma at the end of line, 
+//        while the other file does not.
 let withCloze (text: string []) =
     let del = '，'
     let delString = string del
