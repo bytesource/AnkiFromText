@@ -1,5 +1,3 @@
-.fake/*
-.ionide/*
-obj/*
-.fake
-.ionide
+.fake/
+.ionide/
+obj/
