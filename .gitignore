@@ -1,3 +1,4 @@
-.fake/
-.ionide/
-obj/
+.fake
+.ionide
+obj
+bin
