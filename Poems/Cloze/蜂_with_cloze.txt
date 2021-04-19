@@ -1,1 +1,1 @@
-"{{c1::蜂::feng1}}</br>{{c2::唐 • 罗隐::táng • luo2 yin3}}</br>{{c3::不论平地与山::bú lùn píng dì yǔ shān jiān}}</br>{{c4::无限风光尽被占。::wú xiàn fēng guāng jìn bèi zhàn 。}}</br>{{c5::采得百花成蜜::cǎi dé bǎi huā chéng mì hòu}}</br>{{c6::为谁辛苦为谁甜。::wéi shuí xīn kǔ wéi shuí tián 。}}</br>"
+"{{c1::蜂::feng1}}</br>{{c2::唐 • 罗隐::táng • luo2 yin3}}</br>{{c3::不论平地与山::bú lùn píng dì yǔ shān jiān}}</br>{{c4::无限风光尽被占。::wú xiàn fēng guāng jìn bèi zhàn 。}}</br>{{c5::采得百花成蜜::cǎi dé bǎi huā chéng mì hòu}}</br>{{c6::为谁辛苦为谁甜？::wéi shuí xīn kǔ wéi shuí tián?}}</br>"
