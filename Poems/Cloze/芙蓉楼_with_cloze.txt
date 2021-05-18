@@ -1,0 +1,1 @@
+"{{c1::芙蓉楼送辛渐::fú róng lóu sòng xīn jiàn}}</br>{{c2::唐代：王昌龄::tang2: wánɡ chānɡ línɡ}}</br>{{c3::寒雨连江夜入吴::hán yǔ lián jiāng yè rù wú}}</br>{{c4::平明送客楚山孤。::píng míng sòng kè chǔ shān gū 。}}</br>{{c5::洛阳亲友如相问::luò yáng qīn yǒu rú xiàng wèn}}</br>{{c6::一片冰心在玉壶。::yī piàn bīng xīn zài yù hú 。}}</br>"
