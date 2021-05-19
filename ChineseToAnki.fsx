@@ -5,12 +5,12 @@ open System.IO
 
 open FSharp.Data
 
-let lesson   = "19"
+let lesson   = "23"
 let baseName = "4th_grade_2nd_semester_lesson_"
-let ext      = "txt"
+let ext      = ".txt"
 let sourceFile = baseName + lesson + ext
 
-let destinationFile = baseName + lesson
+let destinationFile = baseName + lesson + ".csv"
 
 module Types = 
 
@@ -93,7 +93,7 @@ let wordsWithPinyinEnglish filename =
 
 
 let toFile filename (coll: seq<(Chinese * Pinyin * English)>) =
-    let path = "./assets/ready/" |> Path.GetFullPath
+    let path = "./Vocab/ready/" |> Path.GetFullPath
     let fullPath = path + filename
 
     let data = 
