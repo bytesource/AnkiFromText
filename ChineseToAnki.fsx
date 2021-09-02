@@ -5,8 +5,8 @@ open System.IO
 
 open FSharp.Data
 
-let lesson   = "26"
-let baseName = "4th_grade_2nd_semester_lesson_"
+let lesson   = "1"
+let baseName = "5th_grade_1st_semester_lesson_"
 let ext      = ".txt"
 let sourceFile = baseName + lesson + ext
 

@@ -6,6 +6,31 @@ open System
 open System.IO
 open FSharp.Data
 
+
+// ========================
+// Ben: Poker
+let noStraightHand = [1; 2; 5; 6; 7]
+let straightHand =   [1; 2; 3; 4; 5]
+
+// In an enumeration of ints, the difference 
+// between the highest and lowest value is always
+// the length of the list - 1.
+// So this is what we test here.
+let isStraight cards =
+    let max = cards |> List.max
+    let min = cards |> List.min
+
+    let maxMinDiff = max - min
+    
+    let straightDiff = (cards |> List.length) - 1
+
+    maxMinDiff = straightDiff
+
+let teststraight1 = isStraight noStraightHand
+let teststraight2 = isStraight straightHand
+
+// ===========================
+
 let filename = "lesson 6.csv"
 
 let baseUrl = "http://www.jukuu.com/search.php"
