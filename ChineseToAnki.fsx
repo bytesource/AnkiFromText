@@ -5,7 +5,11 @@ open System.IO
 
 open FSharp.Data
 
-let lesson   = "8"
+// FIXME:
+// Cedict returns pinyin with 'ü' as 'u:e'
+// Example: qin1 lu:e4
+
+let lesson   = "9"
 let baseName = "5th_grade_1st_semester_lesson_"
 let ext      = ".txt"
 let sourceFile = baseName + lesson + ext
