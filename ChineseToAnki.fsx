@@ -9,7 +9,9 @@ open FSharp.Data
 // Cedict returns pinyin with 'ü' as 'u:e'
 // Example: qin1 lu:e4
 
-let lesson   = "16"
+// Vocab 17, 18
+// https://writer.zoho.com/writer/open/bkn1z6227cbb775df44da91c7a377e54e524c
+let lesson   = "18"
 let baseName = "5th_grade_1st_semester_lesson_"
 let ext      = ".txt"
 let sourceFile = baseName + lesson + ext
