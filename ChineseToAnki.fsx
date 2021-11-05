@@ -11,7 +11,7 @@ open FSharp.Data
 
 // Vocab 17, 18
 // https://writer.zoho.com/writer/open/bkn1z6227cbb775df44da91c7a377e54e524c
-let lesson   = "chengyu"
+let lesson   = "18Plus"
 let baseName = "5th_grade_1st_semester_lesson_"
 let ext      = ".txt"
 let sourceFile = baseName + lesson + ext
