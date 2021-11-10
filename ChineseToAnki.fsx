@@ -9,9 +9,11 @@ open FSharp.Data
 // Cedict returns pinyin with 'ü' as 'u:e'
 // Example: qin1 lu:e4
 
+// FIXME: Replace comma in English translation with '-'.
+
 // Vocab 17, 18
 // https://writer.zoho.com/writer/open/bkn1z6227cbb775df44da91c7a377e54e524c
-let lesson   = "19"
+let lesson   = "22"
 let baseName = "5th_grade_1st_semester_lesson_"
 let ext      = ".txt"
 let sourceFile = baseName + lesson + ext
