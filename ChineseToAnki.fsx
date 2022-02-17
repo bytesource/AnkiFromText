@@ -3,18 +3,13 @@
 open System
 open System.IO
 
-open FSharp.Data
+open FSharp.Data 
 
-// FIXME:
-// Cedict returns pinyin with 'ü' as 'u:e'
-// Example: qin1 lu:e4
-
-// FIXME: Replace comma in English translation with '-'.
 
 // Vocab 17, 18
 // https://writer.zoho.com/writer/open/bkn1z6227cbb775df44da91c7a377e54e524c
 let lesson   = "26"
-let baseName = "5th_grade_1st_semester_lesson_"
+let baseName = "5th_grade_2nd_semester_lesson_"
 let ext      = ".txt"
 let sourceFile = baseName + lesson + ext
 
@@ -25,7 +20,7 @@ module Types =
     [<RequireQualifiedAccess>]
     type Chinese = private { Chinese: string }
     with
-        static member Of(text) = { Chinese = text }
+        static member Of(text: string) = { Chinese = text.Trim() }
         member this.Text = this.Chinese
 
     [<RequireQualifiedAccess>]
@@ -53,7 +48,8 @@ module Cedict =
                     Schema="Chinese, Pinyin, English">.GetSample()
 
     
-    let pinyinEnglishMap = 
+    let pinyinEnglishMap() = 
+        printfn ("_____________GETTING CEDICT....")
         coreSentenceProvider.Rows
         |> Seq.map (fun row -> 
                 Chinese.Of row.Chinese, (Pinyin.Of row.Pinyin, English.Of row.English))
@@ -65,12 +61,24 @@ module Cedict =
         let firstTranslation = 
             english.Text.Trim([| ']'; '['; ' ' |]).Split(';').[0]
 
-        firstTranslation.Trim() |> English.Of
+
+        firstTranslation.Trim() 
+        // Replace all commas that would break CSV formatting.
+        |> fun text -> text.Replace(',', '-')
+        |> English.Of
+
+
+    // Cedict returns pinyin with 'ü' as 'u:'
+    // Example: qin1 lu:e4
+    let formatPinyin (pinyin: Pinyin) = 
+        pinyin.Text.Replace("u:", "ü")
+        |> Pinyin.Of
 
     
-    let tryLookupPinyinEnglish (chinese: Chinese) = 
-        pinyinEnglishMap 
+    let tryLookupPinyinEnglish cedict (chinese: Chinese) = 
+        cedict 
         |> Map.tryFind chinese
+        |> Option.map (fun (p, e) -> formatPinyin p, formatEnglish e)
 
 
 open Types
@@ -87,15 +95,15 @@ let words filename=
     |> Array.map Chinese.Of
 
 
-let wordsWithPinyinEnglish filename = 
-    words filename
+let wordsWithPinyinEnglish cedict newVocab = 
+    newVocab
     |> Array.map (fun word ->
         let (pinyin, english) = 
             word
-            |> Cedict.tryLookupPinyinEnglish
+            |> Cedict.tryLookupPinyinEnglish cedict
             |> Option.defaultValue (Pinyin.Of "", English.Of "")
 
-        word, pinyin, english |> Cedict.formatEnglish
+        word, pinyin, english
     )
 
 
@@ -113,9 +121,9 @@ let toFile filename (coll: seq<(Chinese * Pinyin * English)>) =
     File.WriteAllLines(fullPath, data)
 
 
-sourceFile
-|> wordsWithPinyinEnglish
-|> toFile destinationFile
+// words sourceFile
+// |> wordsWithPinyinEnglish
+// |> toFile destinationFile
 
 
 
