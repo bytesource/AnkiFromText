@@ -24,16 +24,17 @@ module Helpers =
 
 module Names = 
     // Luka语文5年级::上半年::Lesson 6
-    let batchFilename = "5th_grade_2nd_semester.txt"
+    let batchFilename = "6th_grade_1st_semester.txt"
     let batchSrcPath  = [ "Vocab"; "new"; "batch"];
 
     let ankiPath  = [ "Vocab"; "ready"; "fromBatch" ]
-    let ankiFileBase  = "5th_grade_2nd_semester_lesson "
+    let ankiFileBase  = "6th_grade_1st_semester_lesson "
     //let ankiFileBase  = "Luka语文5年级::下半年::Lesson "
     let ankiFileEnding = ".csv"
 
-    let ankiFilename num = 
-        sprintf $"%s{ankiFileBase}%i{num}%s{ankiFileEnding}"
+    let ankiFilename num extra = 
+        let extraStr = extra |> Option.defaultValue ""
+        sprintf $"%s{ankiFileBase}%i{num}%s{extraStr}%s{ankiFileEnding}"
 
 
 module IO =
@@ -83,7 +84,7 @@ module Batch =
                     |> Helpers.toSimplified
                     |> Chinese.Of)
 
-            num, vocab
+            num, vocab // num = lesson number
         ]
         |> Map.ofList
 
@@ -108,13 +109,25 @@ module Vocab =
 
 module App = 
 
+    let isPinyinEmpty (pinyin: Pinyin) = 
+        pinyin.Text = String.Empty
+    
+    // Calculate how many words could not be found in cedit.
+    // In this case Pinyin "xxx" is empty.
+    let missingTranslationCount translations = 
+        translations
+        |> Seq.filter(fun (_, pinyin, _) -> pinyin |> isPinyinEmpty)
+        |> Seq.length
+
     let cedict = Cedict.pinyinEnglishMap()
 
     let fromBatchToVocabFiles() = 
         Batch.toMap()
         |> Vocab.withTranslations cedict
         |> Map.iter (fun num translations -> 
-            let name = Names.ankiFilename num
+            let missing = translations |> missingTranslationCount
+            let countStr = if missing = 0 then None else Some $"_{missing}" 
+            let name = Names.ankiFilename num countStr
             let fullPath = IO.stitchPath Names.ankiPath name
             Vocab.toFile fullPath translations)
         
