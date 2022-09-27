@@ -1,0 +1,1 @@
+{{c1::avoir::haben}}</br>{{c2::j'ai::Ich habe}}</br>{{c3::tu as::Du hast}}</br>{{c4::il/elle a::Er/Sie hat}}</br>{{c5::nous avons::Wir haben}}</br>{{c6::vous avez::Ihr habt}}</br>{{c7::ils/elles ont::Sie haben}}</br>

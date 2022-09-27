@@ -1,0 +1,1 @@
+{{c1::je vois::ich sehe}}</br>{{c2::tu vois::du siehst}}</br>{{c3::il/elle voit::er/sie sieht}}</br>{{c4::nous voyons::wir sehen}}</br>{{c5::vous voyez::ihr seht}}</br>{{c6::ils/elles voient::sie sehen}}</br>

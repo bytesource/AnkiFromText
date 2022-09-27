@@ -1,0 +1,1 @@
+{{c1::je vais::ich gehe}}</br>{{c2::tu vas::du gehst}}</br>{{c3::il/elle va::er/sie geht}}</br>{{c4::nous allons::wir gehen}}</br>{{c5::vous allez::ihr geht}}</br>{{c6::ils/elles vont::sie gehen}}</br>

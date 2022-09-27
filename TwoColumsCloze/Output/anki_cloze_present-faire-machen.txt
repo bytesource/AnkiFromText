@@ -1,0 +1,1 @@
+{{c1::je fais::Ich mache}}</br>{{c2::tu fais::Du machst}}</br>{{c3::il/elle fait::Er/Sie macht}}</br>{{c4::nous faisons::Wir machen}}</br>{{c5::vous faites::Ihr macht}}</br>{{c6::ils/elles font::Sie machen}}</br>

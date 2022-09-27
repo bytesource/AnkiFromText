@@ -1,0 +1,1 @@
+{{c1::je peux::ich kann}}</br>{{c2::tu peux::du kannst}}</br>{{c3::il/elle peut::er/sie kann}}</br>{{c4::nous pouvons::wir können}}</br>{{c5::vous pouvez::ihr könnt}}</br>{{c6::ils/elles peuvent::sie können}}</br>

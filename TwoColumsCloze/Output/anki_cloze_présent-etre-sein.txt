@@ -1,0 +1,1 @@
+{{c1::être::sein}}</br>{{c2::je suis::Ich bin}}</br>{{c3::tu es::Du bist}}</br>{{c4::il/elle est::Er/Sie ist}}</br>{{c5::nous sommes::Wir sind}}</br>{{c6::vous êtes::Ihr seid}}</br>{{c7::ils/elles sont::Sie sind}}</br>

@@ -1,0 +1,1 @@
+{{c1::je veux::ich möchte}}</br>{{c2::tu veux::du möchtest}}</br>{{c3::il/elle veut::er/sie möchte}}</br>{{c4::nous voulons::wir möchten}}</br>{{c5::vous voulez::ihr möchtet}}</br>{{c6::ils/elles veulent::sie möchten}}</br>
